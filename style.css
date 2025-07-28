@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, white 50%, rgb(217, 227, 239) 50%);
+  max-height: 100vh;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: black;
+}
+
+.logo {
+  border: 2px solid black;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.hero-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.hero-text {
+  z-index: 2;
+  position: relative;
+}
+
+.hero-image {
+  width: 968px;
+  height: 967px;
+  align-self: flex-end;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 60px;
+  width: 529px;
+  line-height: 1.2;
+  color: black; 
+  z-index: 2;
+  margin-bottom: 60px;
+  letter-spacing: 0.02em;
+  margin-right: -180px; /* Заголовок заходит на изображение */
+  position: relative;
+  background: transparent;
+}
+
+button {
+  width: 212px;
+  height: 66px;
+  padding: 22px 55px; 
+  border: none;
+  background-color: #373737;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #222;
+}
